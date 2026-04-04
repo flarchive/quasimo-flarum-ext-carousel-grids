@@ -1,0 +1,36 @@
+{
+  "name": "quasimo/flarum-ext-carousel-grids",
+  "description": "Display carousel grids with background images, logos, and auto-scroll",
+  "keywords": ["flarum", "extension", "carousel", "grid", "slider"],
+  "type": "flarum-extension",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Quasimo",
+      "homepage": "https://geekaa.com"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/Quasimo/flarum-ext-carousel-grids/issues",
+    "source": "https://github.com/Quasimo/flarum-ext-carousel-grids"
+  },
+  "require": {
+    "flarum/core": "^2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Quasimo\\CarouselGrids\\": "src/"
+    }
+  },
+  "extra": {
+    "flarum-extension": {
+      "title": "Carousel Grids",
+      "category": "feature",
+      "icon": {
+        "name": "fas fa-th-large",
+        "color": "#3498db",
+        "backgroundColor": "#ecf0f1"
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "carousel-grids": {
+    "admin": {
+      "columns_label": "每行列数（桌面端）",
+      "position_label": "显示位置",
+      "position_after_hero": "Hero 区域下方",
+      "position_before_footer": "页脚上方",
+      "scope_label": "显示范围",
+      "scope_homepage": "仅首页",
+      "scope_all": "全站",
+      "save_settings": "保存设置",
+      "items_label": "管理网格项目",
+      "manage_items": "管理项目",
+      "add_item": "添加项目",
+      "edit_item": "编辑项目",
+      "title": "标题",
+      "description": "简介",
+      "background_image": "背景图片 URL",
+      "logo": "Logo URL（可选）",
+      "link": "链接 URL（可选）",
+      "image_position": "Logo 位置",
+      "position_top": "顶部",
+      "position_left": "左侧",
+      "save_button": "保存",
+      "saved_message": "设置已保存",
+      "delete_confirmation": "确定要删除此项目吗？"
+    }
+  }
+}
