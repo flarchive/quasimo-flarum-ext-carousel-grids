@@ -1,0 +1,81 @@
+.CarouselGrids {
+  margin: 20px 0;
+  overflow: hidden;
+  padding: 0 15px;
+  position: relative;
+}
+
+.CarouselGrids-container {
+  display: grid;
+  gap: 20px;
+  transition: opacity 0.5s ease;
+}
+
+.CarouselGrids-container.is-transitioning {
+  opacity: 0;
+}
+
+.CarouselGrids-item {
+  position: relative;
+  min-height: 100px;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+  }
+}
+
+.CarouselGrids-item--top {
+  display: flex;
+  flex-direction: column;
+}
+
+.CarouselGrids-item--left {
+  display: flex;
+  flex-direction: row;
+}
+
+.CarouselGrids-logo {
+  padding: 20px;
+  text-align: center;
+
+  img {
+    max-width: 80px;
+    max-height: 80px;
+    object-fit: contain;
+  }
+}
+
+.CarouselGrids-content {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.CarouselGrids-title {
+  margin: 0 0 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.CarouselGrids-description {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .CarouselGrids-container {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .CarouselGrids-container {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
